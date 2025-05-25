@@ -58,6 +58,56 @@ Or run it from an IDE like Spyder, VS Code, or PyCharm.
 
 ---
 
+🔧 Converting sample3.py to Executable (.exe)
+You can convert this Python script into a standalone .exe application using PyInstaller.
+
+✅ Prerequisites
+Python installed (e.g., via Anaconda or regular Python)
+
+Install PyInstaller:
+
+bash
+Copy
+Edit
+pip install pyinstaller
+🚀 Building the Executable
+Run the following command in your terminal or Anaconda Prompt where sample3.py is located:
+
+bash
+Copy
+Edit
+pyinstaller --onefile --windowed sample3.py
+Options explained:
+
+--onefile: Bundles everything into a single .exe file.
+
+--windowed: Hides the terminal window (used for GUI apps like Tkinter).
+
+📁 Output Location
+After building, check the dist folder. You’ll find:
+
+bash
+Copy
+Edit
+dist/sample3.exe
+Double-click sample3.exe to run the application.
+
+⚠️ Notes
+First build may take a few minutes.
+
+Warnings about missing DLLs (like pgmath.dll) can usually be ignored unless the app fails to run.
+
+If your app uses external files (like images, CSVs, etc.), make sure to handle file paths correctly or include them using the --add-data flag.
+
+🧹 Clean Build (optional)
+To remove previous build files and start fresh:
+
+bash
+Copy
+Edit
+pyinstaller --onefile --windowed --clean sample3.py
+This deletes old build/, dist/, and *.spec files automatically.
+
 # 📁 Output Files
 
 After a scan, results are saved to:
