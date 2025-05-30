@@ -51,7 +51,7 @@ Make sure the API key and port match your ZAP settings.
 # 🖥️ How to Run
 
 ```bash
-python file3.py
+python Dashboard.py
 ```
 
 Or run it from an IDE like Spyder, VS Code, or PyCharm.
